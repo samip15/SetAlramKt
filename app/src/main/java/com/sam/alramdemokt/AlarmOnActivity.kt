@@ -11,6 +11,7 @@ class AlarmOnActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alarm_on)
+        // Media player
         var mp = MediaPlayer.create(applicationContext,R.raw.baby_mix)
         mp.start()
         val btnStop = findViewById<Button>(R.id.button_stop)
