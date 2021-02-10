@@ -7,6 +7,7 @@ class MyBroadcastReceiver : BroadcastReceiver(){
         var i = Intent(context,AlarmOnActivity::class.java)
         // setting up flag
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        // start activity
         context?.startActivity(i)
     }
 }
