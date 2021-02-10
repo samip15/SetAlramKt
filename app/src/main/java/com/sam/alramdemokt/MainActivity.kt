@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         val btnAlram = findViewById<Button>(R.id.btn_alram)
         btnAlram.setOnClickListener {
             try {
+                // second edit text
                 var sec = editTextAlram.text.toString().toInt()
                 var i = Intent(applicationContext,MyBroadcastReceiver::class.java)
                 var pi = PendingIntent.getBroadcast(applicationContext,111,i, 0)
